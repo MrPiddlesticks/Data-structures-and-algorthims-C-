@@ -3,7 +3,38 @@ using namespace std;
 
 int main ()
 {
-	cout << "Hello World!";
+	int A[5];
+	A[0] = 12;
+	A[1] = 27;
+	A[2] = 12;
+	A[3] = 31;
+
+	int n;
+	cout << "Enter array size"<<endl;
+	cin >> n;
+
+	//int C[n]; can do in some compliers some dont my does not called a variable size array
+
+	int B[2] = {0,1};
+
+	for(int i=0; i<2; i++)
+	{
+		cout << B[i];
+	}
+	cout << endl;
+
+	for (int x:A)
+	{
+		cout << x << endl;
+	}
+
+	cout << sizeof(A)<<endl;
+	cout << A[1]<<endl;
+	printf("%d\n", A[1]);
+
+	cout << B[0] << endl;
+	printf("%d\n", B[1]);
+
 	return 0;
 
 }
